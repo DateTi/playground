@@ -13,6 +13,42 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'afdda9f94b76f77a7518e02eee753cc9' => __DIR__ . '/..' . '/nette/mail/src/compatibility.php',
     );
 
+    public static $prefixLengthsPsr4 = array (
+        'D' => 
+        array (
+            'DateTi\\Time\\' => 12,
+            'DateTi\\Localization\\' => 20,
+            'DateTi\\Holidays\\' => 16,
+            'DateTi\\DI\\' => 10,
+            'DateTi\\' => 7,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'DateTi\\Time\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dateti/time/src',
+        ),
+        'DateTi\\Localization\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dateti/localization-en/src/Localization',
+        ),
+        'DateTi\\Holidays\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dateti/holidays/src',
+        ),
+        'DateTi\\DI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dateti/nette-extension/src/DI',
+        ),
+        'DateTi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dateti/dateti/src',
+            1 => __DIR__ . '/..' . '/dateti/dateti/src',
+            2 => __DIR__ . '/..' . '/dateti/localization/src',
+        ),
+    );
+
     public static $classMap = array (
         'App\\Bootstrap' => __DIR__ . '/../..' . '/app/Bootstrap.php',
         'Latte\\CompileException' => __DIR__ . '/..' . '/latte/latte/src/Latte/exceptions.php',
@@ -336,6 +372,7 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\Utils\\DateTime' => __DIR__ . '/..' . '/nette/utils/src/Utils/DateTime.php',
         'Nette\\Utils\\FileSystem' => __DIR__ . '/..' . '/nette/utils/src/Utils/FileSystem.php',
         'Nette\\Utils\\Finder' => __DIR__ . '/..' . '/nette/finder/src/Utils/Finder.php',
+        'Nette\\Utils\\Helpers' => __DIR__ . '/..' . '/nette/utils/src/Utils/Helpers.php',
         'Nette\\Utils\\Html' => __DIR__ . '/..' . '/nette/utils/src/Utils/Html.php',
         'Nette\\Utils\\IHtmlString' => __DIR__ . '/..' . '/nette/utils/src/Utils/IHtmlString.php',
         'Nette\\Utils\\Image' => __DIR__ . '/..' . '/nette/utils/src/Utils/Image.php',
@@ -401,6 +438,8 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit091ed5d24b4127ffc48411e34be2086f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit091ed5d24b4127ffc48411e34be2086f::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit091ed5d24b4127ffc48411e34be2086f::$classMap;
 
         }, null, ClassLoader::class);

@@ -19,13 +19,20 @@
 		"nette/security": "^3.0",
 		"nette/utils": "^3.0",
 		"latte/latte": "^2.5",
-		"tracy/tracy": "^2.6"
+		"tracy/tracy": "^2.6",
+		"dateti/dateti": "@dev"
 	},
 	"require-dev": {
 		"nette/tester": "^2.0"
 	},
 	"autoload": {
-		"classmap": ["app/Bootstrap.php"]
+		"classmap": ["app/Bootstrap.php"],
+		"psr-4": {
+			"DateTi\\": "vendor/dateti/dateti/src",
+			"DateTi\\DI\\": "vendor/dateti/nette-extension/src/DI",
+			"DateTi\\Localization\\": "vendor/dateti/localization/src/Localization",
+			"DateTi\\Localization\\": "vendor/dateti/localization-en/src/Localization"
+		}
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "dev"
 }

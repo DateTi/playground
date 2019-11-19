@@ -2,14 +2,21 @@ parameters:
 
 
 application:
-	errorPresenter: Error
-	mapping:
-		*: App\*Module\Presenters\*Presenter
+    errorPresenter: Error
+    mapping:
+        *: App\*Module\Presenters\*Presenter
 
 
 session:
-	expiration: 14 days
+    expiration: 14 days
 
+extensions:
+    dateti: DateTi\DI\NetteExtension
 
 services:
-	router: App\Router\RouterFactory::createRouter
+    router: App\Router\RouterFactory::createRouter
+
+dateti:
+    timezone: Europe/Prague
+    localizations:
+        - DateTi\Localization\English

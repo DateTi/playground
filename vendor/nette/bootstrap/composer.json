@@ -24,12 +24,13 @@
 		"tracy/tracy": "to use Configurator::enableTracy()"
 	},
 	"require-dev": {
-		"nette/application": "^3.0",
+		"nette/application": "^3.1",
 		"nette/caching": "^3.0",
 		"nette/database": "^3.0",
-		"nette/forms": "^3.0",
-		"nette/http": "^3.0",
+		"nette/forms": "^3.1",
+		"nette/http": "^4.0",
 		"nette/mail": "^3.0",
+		"nette/middleware": "^1.0",
 		"nette/robot-loader": "^3.0",
 		"nette/safe-stream": "^2.2",
 		"nette/security": "^3.0",
@@ -46,7 +47,7 @@
 	"minimum-stability": "dev",
 	"extra": {
 		"branch-alias": {
-			"dev-master": "3.0-dev"
+			"dev-master": "3.1-dev"
 		}
 	}
 }

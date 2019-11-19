@@ -40,6 +40,7 @@ class Configurator
 		'http' => [Nette\Bridges\HttpDI\HttpExtension::class, ['%consoleMode%']],
 		'inject' => Nette\DI\Extensions\InjectExtension::class,
 		'latte' => [Nette\Bridges\ApplicationDI\LatteExtension::class, ['%tempDir%/cache/latte', '%debugMode%']],
+		'middleware' => Nette\Bridges\MiddlewareDI\MiddlewareExtension::class,
 		'mail' => Nette\Bridges\MailDI\MailExtension::class,
 		'php' => Nette\DI\Extensions\PhpExtension::class,
 		'routing' => [Nette\Bridges\ApplicationDI\RoutingExtension::class, ['%debugMode%']],
