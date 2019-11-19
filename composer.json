@@ -20,9 +20,16 @@
 		"nette/utils": "^3.0",
 		"latte/latte": "^2.5",
 		"tracy/tracy": "^2.6",
+		"dateti/core": "@dev",
 		"dateti/dateti": "@dev",
+		"dateti/holidays-cs": "@dev",
+		"dateti/holidays-easter-catholic": "@dev",
+		"dateti/holidays-easter-php": "@dev",
 		"dateti/localization-en": "@dev",
-		"dateti/nette-extension": "@dev"
+		"dateti/localization-cs": "@dev",
+		"dateti/nette-extension": "@dev",
+		"dateti/country-czech-republic": "@dev",
+		"dateti/time": "@dev"
 	},
 	"require-dev": {
 		"nette/tester": "^2.0"
