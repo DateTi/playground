@@ -20,16 +20,16 @@
 		"nette/utils": "^3.0",
 		"latte/latte": "^2.5",
 		"tracy/tracy": "^2.6",
-		"dateti/core": "@dev",
-		"dateti/dateti": "@dev",
-		"dateti/holidays-cs": "@dev",
-		"dateti/holidays-easter-catholic": "@dev",
-		"dateti/holidays-easter-php": "@dev",
-		"dateti/localization-en": "@dev",
-		"dateti/localization-cs": "@dev",
-		"dateti/nette-extension": "@dev",
-		"dateti/country-czech-republic": "@dev",
-		"dateti/time": "@dev"
+		"dateti/core": "dev-master",
+		"dateti/dateti": "dev-master",
+		"dateti/holidays-cs": "dev-master",
+		"dateti/holidays-easter-catholic": "dev-master",
+		"dateti/holidays-easter-php": "dev-master",
+		"dateti/localization-en": "dev-master",
+		"dateti/localization-cs": "dev-master",
+		"dateti/nette-extension": "dev-master",
+		"dateti/country-czech-republic": "dev-master",
+		"dateti/time": "dev-master"
 	},
 	"require-dev": {
 		"nette/tester": "^2.0"
@@ -40,7 +40,7 @@
 			"DateTi\\": "vendor/dateti/dateti/src",
 			"DateTi\\DI\\": "vendor/dateti/nette-extension/src/DI",
 			"DateTi\\Localization\\": "vendor/dateti/localization/src/Localization",
-			"DateTi\\Localization\\": "vendor/dateti/localization-en/src/Localization"
+			"DateTi\\Localization\\English\\": "vendor/dateti/localization-en/src/Localization"
 		}
 	},
 	"minimum-stability": "dev"

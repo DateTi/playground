@@ -11,7 +11,7 @@ session:
     expiration: 14 days
 
 extensions:
-    dateti: DateTi\DI\NetteExtension
+    dateti: DateTi\DI\Nette\Extension
 
 services:
     router: App\Router\RouterFactory::createRouter

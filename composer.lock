@@ -4,27 +4,135 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eda0997d74cc01fe31e59131461aab1c",
+    "content-hash": "c6fb871fa73aab6c92337bc0727ef57d",
     "packages": [
+        {
+            "name": "dateti/core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DateTi/Core.git",
+                "reference": "5809266925cf8c09d648f57c1eda7955c788c9ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DateTi/Core/zipball/5809266925cf8c09d648f57c1eda7955c788c9ce",
+                "reference": "5809266925cf8c09d648f57c1eda7955c788c9ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DateTi\\Core\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Galek",
+                    "email": "admin@gcore.cz"
+                }
+            ],
+            "description": "Core of DateTi",
+            "time": "2019-11-19T21:52:09+00:00"
+        },
+        {
+            "name": "dateti/country",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DateTi/Country.git",
+                "reference": "d9d9f87c1894bcc141c464395c369368dfbe630f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DateTi/Country/zipball/d9d9f87c1894bcc141c464395c369368dfbe630f",
+                "reference": "d9d9f87c1894bcc141c464395c369368dfbe630f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DateTi\\Countries\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Galek",
+                    "email": "admin@gcore.cz"
+                }
+            ],
+            "time": "2019-11-19T21:44:24+00:00"
+        },
+        {
+            "name": "dateti/country-czech-republic",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DateTi/CountryCzechRepublic.git",
+                "reference": "081d93ed95bc7cdc28546109ca88bc5f208f0287"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DateTi/CountryCzechRepublic/zipball/081d93ed95bc7cdc28546109ca88bc5f208f0287",
+                "reference": "081d93ed95bc7cdc28546109ca88bc5f208f0287",
+                "shasum": ""
+            },
+            "require": {
+                "dateti/country": "@dev",
+                "dateti/holidays": "dev-master",
+                "dateti/localization-cs": "dev-master",
+                "php": ">= 7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DateTi\\Countries\\Czech\\": "src/Country/Czech"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Galek",
+                    "email": "admin@gcore.cz"
+                }
+            ],
+            "time": "2019-11-19T21:51:58+00:00"
+        },
         {
             "name": "dateti/dateti",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DateTi/DateTi.git",
-                "reference": "cc1e43918034616a41015628c7e0445400fc1120"
+                "reference": "65dbb5d454cf2eb5c219ad95f529d099beba779f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DateTi/DateTi/zipball/cc1e43918034616a41015628c7e0445400fc1120",
-                "reference": "cc1e43918034616a41015628c7e0445400fc1120",
+                "url": "https://api.github.com/repos/DateTi/DateTi/zipball/65dbb5d454cf2eb5c219ad95f529d099beba779f",
+                "reference": "65dbb5d454cf2eb5c219ad95f529d099beba779f",
                 "shasum": ""
             },
             "require": {
-                "dateti/holidays": "^1.0",
-                "dateti/localization": "v1.0.0-alpha1",
-                "dateti/time": "^1.0",
-                "nette/neon": "^2.4|^3.0@dev",
+                "dateti/holidays": "^1.0|dev-master",
+                "dateti/localization": "dev-master",
+                "dateti/time": "^1.0|dev-master",
                 "php": ">=7.2"
             },
             "require-dev": {
@@ -48,24 +156,28 @@
                 }
             ],
             "description": "DateTi",
-            "time": "2019-09-10T15:33:12+00:00"
+            "time": "2019-11-19T23:13:56+00:00"
         },
         {
             "name": "dateti/holidays",
-            "version": "v1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DateTi/Holidays.git",
-                "reference": "22af522f1664dbe3e66425c014253b3e98e451b7"
+                "reference": "666e810ddc13937e20e76fce4d029b2b03f98989"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DateTi/Holidays/zipball/22af522f1664dbe3e66425c014253b3e98e451b7",
-                "reference": "22af522f1664dbe3e66425c014253b3e98e451b7",
+                "url": "https://api.github.com/repos/DateTi/Holidays/zipball/666e810ddc13937e20e76fce4d029b2b03f98989",
+                "reference": "666e810ddc13937e20e76fce4d029b2b03f98989",
                 "shasum": ""
             },
             "require": {
+                "dateti/time": "*",
                 "php": ">=7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2"
             },
             "type": "library",
             "autoload": {
@@ -84,20 +196,145 @@
                 }
             ],
             "description": "DateTi",
-            "time": "2019-05-21T21:37:59+00:00"
+            "time": "2019-11-19T19:59:41+00:00"
         },
         {
-            "name": "dateti/localization",
-            "version": "v1.0.0-alpha1",
+            "name": "dateti/holidays-cs",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/DateTi/Localization.git",
-                "reference": "5c9cf031d1c99e141a49218e2934bd389e6d183e"
+                "url": "https://github.com/DateTi/CzechHolidays.git",
+                "reference": "0010103985e12008985a74b3231d6c6bfde0312c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DateTi/Localization/zipball/5c9cf031d1c99e141a49218e2934bd389e6d183e",
-                "reference": "5c9cf031d1c99e141a49218e2934bd389e6d183e",
+                "url": "https://api.github.com/repos/DateTi/CzechHolidays/zipball/0010103985e12008985a74b3231d6c6bfde0312c",
+                "reference": "0010103985e12008985a74b3231d6c6bfde0312c",
+                "shasum": ""
+            },
+            "require": {
+                "dateti/holidays": "dev-master",
+                "dateti/time": "dev-master",
+                "nette/neon": "v3.0.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "dateti/dateti": "dev-master",
+                "mockery/mockery": "^1.2",
+                "phpunit/phpunit": "^8.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DateTi\\Holidays\\Czech\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Galek",
+                    "email": "admin@gcore.cz"
+                }
+            ],
+            "time": "2019-11-19T21:52:55+00:00"
+        },
+        {
+            "name": "dateti/holidays-easter-catholic",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DateTi/HolidaysEasterCatholic.git",
+                "reference": "1588c7dc6327479a7e950d17da209e48cf5c2b7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DateTi/HolidaysEasterCatholic/zipball/1588c7dc6327479a7e950d17da209e48cf5c2b7e",
+                "reference": "1588c7dc6327479a7e950d17da209e48cf5c2b7e",
+                "shasum": ""
+            },
+            "require": {
+                "dateti/holidays": "^1.0|dev-master",
+                "ext-calendar": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DateTi\\Holidays\\Easter\\Catholic\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Galek",
+                    "email": "admin@gcore.cz"
+                }
+            ],
+            "description": "DateTi",
+            "time": "2019-11-19T21:20:39+00:00"
+        },
+        {
+            "name": "dateti/holidays-easter-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DateTi/HolidaysEasterPHP.git",
+                "reference": "1c1f23e0c7fd83f74bffd85659f9faca81291666"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DateTi/HolidaysEasterPHP/zipball/1c1f23e0c7fd83f74bffd85659f9faca81291666",
+                "reference": "1c1f23e0c7fd83f74bffd85659f9faca81291666",
+                "shasum": ""
+            },
+            "require": {
+                "dateti/holidays": "^1.0|dev-master",
+                "ext-calendar": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DateTi\\Holidays\\Easter\\PHP\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Galek",
+                    "email": "admin@gcore.cz"
+                }
+            ],
+            "description": "DateTi",
+            "time": "2019-11-19T21:18:28+00:00"
+        },
+        {
+            "name": "dateti/localization",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DateTi/Localization.git",
+                "reference": "42c4e73cb451c9936847b04cd3659de5ef9258f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DateTi/Localization/zipball/42c4e73cb451c9936847b04cd3659de5ef9258f8",
+                "reference": "42c4e73cb451c9936847b04cd3659de5ef9258f8",
                 "shasum": ""
             },
             "require": {
@@ -109,7 +346,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "DateTi\\": "src"
+                    "DateTi\\Localization\\": "src/Localization"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -123,24 +360,143 @@
                 }
             ],
             "description": "Localization for DateTi",
-            "time": "2019-09-10T11:34:02+00:00"
+            "time": "2019-11-19T23:15:15+00:00"
         },
         {
-            "name": "dateti/time",
-            "version": "v1.0.0",
+            "name": "dateti/localization-cs",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/DateTi/Time.git",
-                "reference": "429a48b278179dc7ad7ddecfcee9a13334d03229"
+                "url": "https://github.com/DateTi/CzechLocalization.git",
+                "reference": "4da99b1d3f2f5a69f430bcc015a1ace62a7e8b43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DateTi/Time/zipball/429a48b278179dc7ad7ddecfcee9a13334d03229",
-                "reference": "429a48b278179dc7ad7ddecfcee9a13334d03229",
+                "url": "https://api.github.com/repos/DateTi/CzechLocalization/zipball/4da99b1d3f2f5a69f430bcc015a1ace62a7e8b43",
+                "reference": "4da99b1d3f2f5a69f430bcc015a1ace62a7e8b43",
                 "shasum": ""
             },
             "require": {
-                "dateti/holidays": "^1.0",
+                "dateti/localization": "dev-master",
+                "nette/neon": "^3.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DateTi\\Localization\\Czech\\": "src/Localization/Czech"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Galek",
+                    "email": "admin@gcore.cz"
+                }
+            ],
+            "description": "English localization",
+            "time": "2019-11-19T23:15:53+00:00"
+        },
+        {
+            "name": "dateti/localization-en",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DateTi/EnglishLocalization.git",
+                "reference": "149f697cd71a3d02d62c36d247d905d2b131b7fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DateTi/EnglishLocalization/zipball/149f697cd71a3d02d62c36d247d905d2b131b7fc",
+                "reference": "149f697cd71a3d02d62c36d247d905d2b131b7fc",
+                "shasum": ""
+            },
+            "require": {
+                "dateti/localization": "dev-master",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DateTi\\Localization\\English\\": "src/Localization/English"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Galek",
+                    "email": "admin@gcore.cz"
+                }
+            ],
+            "description": "English localization",
+            "time": "2019-11-19T21:54:07+00:00"
+        },
+        {
+            "name": "dateti/nette-extension",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DateTi/NetteExtension.git",
+                "reference": "c893b7c77aba24eadf36e37f6a16f108711e2611"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DateTi/NetteExtension/zipball/c893b7c77aba24eadf36e37f6a16f108711e2611",
+                "reference": "c893b7c77aba24eadf36e37f6a16f108711e2611",
+                "shasum": ""
+            },
+            "require": {
+                "dateti/dateti": "^0.1.0|dev-master",
+                "nette/di": "^3.0"
+            },
+            "require-dev": {
+                "php": ">=7.2",
+                "phpunit/phpunit": "^8.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DateTi\\DI\\Nette\\": "src/DI/Nette"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Galek",
+                    "email": "admin@gcore.cz"
+                }
+            ],
+            "description": "Extension DateTi for Nette",
+            "time": "2019-11-19T23:16:22+00:00"
+        },
+        {
+            "name": "dateti/time",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DateTi/Time.git",
+                "reference": "b52821a60c1ad0f817074efae60fc11aa300ddd7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DateTi/Time/zipball/b52821a60c1ad0f817074efae60fc11aa300ddd7",
+                "reference": "b52821a60c1ad0f817074efae60fc11aa300ddd7",
+                "shasum": ""
+            },
+            "require": {
+                "dateti/holidays": "^1.0|dev-master",
                 "ext-calendar": "*",
                 "php": ">=7.2"
             },
@@ -164,7 +520,7 @@
                 }
             ],
             "description": "Nette extension for DateTi",
-            "time": "2019-05-21T22:33:18+00:00"
+            "time": "2019-11-19T20:12:33+00:00"
         },
         {
             "name": "latte/latte",
@@ -172,12 +528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "7ee09e0d1af1f1e3c7cc85fb5e742ab078f1b7a6"
+                "reference": "e827c208ae65d6d667fbcf6068da38a9550c8d82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/7ee09e0d1af1f1e3c7cc85fb5e742ab078f1b7a6",
-                "reference": "7ee09e0d1af1f1e3c7cc85fb5e742ab078f1b7a6",
+                "url": "https://api.github.com/repos/nette/latte/zipball/e827c208ae65d6d667fbcf6068da38a9550c8d82",
+                "reference": "e827c208ae65d6d667fbcf6068da38a9550c8d82",
                 "shasum": ""
             },
             "require": {
@@ -237,7 +593,7 @@
                 "template",
                 "twig"
             ],
-            "time": "2019-09-24T10:42:57+00:00"
+            "time": "2019-11-19T15:26:10+00:00"
         },
         {
             "name": "nette/application",
@@ -245,12 +601,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/application.git",
-                "reference": "602f16d484e211b6259c277f91bc044de7949f8c"
+                "reference": "e65cf05b89f5d72273edc53a2792e4b10f23c1bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/application/zipball/602f16d484e211b6259c277f91bc044de7949f8c",
-                "reference": "602f16d484e211b6259c277f91bc044de7949f8c",
+                "url": "https://api.github.com/repos/nette/application/zipball/e65cf05b89f5d72273edc53a2792e4b10f23c1bf",
+                "reference": "e65cf05b89f5d72273edc53a2792e4b10f23c1bf",
                 "shasum": ""
             },
             "require": {
@@ -283,7 +639,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -324,7 +680,7 @@
                 "routing",
                 "seo"
             ],
-            "time": "2019-11-13T20:16:23+00:00"
+            "time": "2019-11-19T19:03:10+00:00"
         },
         {
             "name": "nette/bootstrap",
@@ -332,12 +688,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/bootstrap.git",
-                "reference": "2aa022c2bd77bad64cd8a17ecd438d151e506d1d"
+                "reference": "331816232609a5acbd56efbf48e6f40200e2c870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/bootstrap/zipball/2aa022c2bd77bad64cd8a17ecd438d151e506d1d",
-                "reference": "2aa022c2bd77bad64cd8a17ecd438d151e506d1d",
+                "url": "https://api.github.com/repos/nette/bootstrap/zipball/331816232609a5acbd56efbf48e6f40200e2c870",
+                "reference": "331816232609a5acbd56efbf48e6f40200e2c870",
                 "shasum": ""
             },
             "require": {
@@ -350,13 +706,12 @@
             },
             "require-dev": {
                 "latte/latte": "^2.2",
-                "nette/application": "^3.1",
+                "nette/application": "^3.0",
                 "nette/caching": "^3.0",
                 "nette/database": "^3.0",
-                "nette/forms": "^3.1",
-                "nette/http": "^4.0",
+                "nette/forms": "^3.0",
+                "nette/http": "^3.0",
                 "nette/mail": "^3.0",
-                "nette/middleware": "^1.0",
                 "nette/robot-loader": "^3.0",
                 "nette/safe-stream": "^2.2",
                 "nette/security": "^3.0",
@@ -370,7 +725,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -401,7 +756,7 @@
                 "configurator",
                 "nette"
             ],
-            "time": "2019-11-13T19:34:59+00:00"
+            "time": "2019-11-19T18:45:53+00:00"
         },
         {
             "name": "nette/caching",
@@ -409,12 +764,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/caching.git",
-                "reference": "20b7d5a6a3228826d9701990fe219685ae8ae4a7"
+                "reference": "b9ecbf920f240bd1ab14900d9a77876924ad7fb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/caching/zipball/20b7d5a6a3228826d9701990fe219685ae8ae4a7",
-                "reference": "20b7d5a6a3228826d9701990fe219685ae8ae4a7",
+                "url": "https://api.github.com/repos/nette/caching/zipball/b9ecbf920f240bd1ab14900d9a77876924ad7fb4",
+                "reference": "b9ecbf920f240bd1ab14900d9a77876924ad7fb4",
                 "shasum": ""
             },
             "require": {
@@ -467,7 +822,7 @@
                 "nette",
                 "sqlite"
             ],
-            "time": "2019-11-13T19:49:45+00:00"
+            "time": "2019-11-19T18:41:40+00:00"
         },
         {
             "name": "nette/component-model",
@@ -532,12 +887,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/database.git",
-                "reference": "4c0e8d0ddf49df0c8d4dba69978b70fbfc96340e"
+                "reference": "e17242a71a251cd09e209c1e2bdb530112a6efa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/database/zipball/4c0e8d0ddf49df0c8d4dba69978b70fbfc96340e",
-                "reference": "4c0e8d0ddf49df0c8d4dba69978b70fbfc96340e",
+                "url": "https://api.github.com/repos/nette/database/zipball/e17242a71a251cd09e209c1e2bdb530112a6efa8",
+                "reference": "e17242a71a251cd09e209c1e2bdb530112a6efa8",
                 "shasum": ""
             },
             "require": {
@@ -596,7 +951,7 @@
                 "queries",
                 "sqlite"
             ],
-            "time": "2019-11-14T11:14:50+00:00"
+            "time": "2019-11-19T18:28:25+00:00"
         },
         {
             "name": "nette/di",
@@ -604,12 +959,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "0af6e987c0ac9f9ec361a51f1ae1b0519a024ffa"
+                "reference": "3aac44e0a29c10e4dbc1e8a8f1a871de0a4ef476"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/0af6e987c0ac9f9ec361a51f1ae1b0519a024ffa",
-                "reference": "0af6e987c0ac9f9ec361a51f1ae1b0519a024ffa",
+                "url": "https://api.github.com/repos/nette/di/zipball/3aac44e0a29c10e4dbc1e8a8f1a871de0a4ef476",
+                "reference": "3aac44e0a29c10e4dbc1e8a8f1a871de0a4ef476",
                 "shasum": ""
             },
             "require": {
@@ -669,7 +1024,7 @@
                 "nette",
                 "static"
             ],
-            "time": "2019-11-13T19:37:22+00:00"
+            "time": "2019-11-19T18:27:16+00:00"
         },
         {
             "name": "nette/finder",
@@ -677,12 +1032,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/finder.git",
-                "reference": "14164e1ddd69e9c5f627ff82a10874b3f5bba5fe"
+                "reference": "1fd3743b358a0c91d80787f669bacdfb167fc8ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/finder/zipball/14164e1ddd69e9c5f627ff82a10874b3f5bba5fe",
-                "reference": "14164e1ddd69e9c5f627ff82a10874b3f5bba5fe",
+                "url": "https://api.github.com/repos/nette/finder/zipball/1fd3743b358a0c91d80787f669bacdfb167fc8ec",
+                "reference": "1fd3743b358a0c91d80787f669bacdfb167fc8ec",
                 "shasum": ""
             },
             "require": {
@@ -731,7 +1086,7 @@
                 "iterator",
                 "nette"
             ],
-            "time": "2019-07-11T18:02:17+00:00"
+            "time": "2019-11-19T00:24:59+00:00"
         },
         {
             "name": "nette/forms",
@@ -739,17 +1094,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/forms.git",
-                "reference": "421e7e5ae4176a1e87fa7d38d3bf510aa3d68985"
+                "reference": "f03a237384e3849b84425c598dfe7e92c19eaaf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/421e7e5ae4176a1e87fa7d38d3bf510aa3d68985",
-                "reference": "421e7e5ae4176a1e87fa7d38d3bf510aa3d68985",
+                "url": "https://api.github.com/repos/nette/forms/zipball/f03a237384e3849b84425c598dfe7e92c19eaaf0",
+                "reference": "f03a237384e3849b84425c598dfe7e92c19eaaf0",
                 "shasum": ""
             },
             "require": {
                 "nette/component-model": "^3.0",
-                "nette/http": "^3.0 || ~4.0.0",
+                "nette/http": "^3.0",
                 "nette/utils": "^3.0",
                 "php": ">=7.1"
             },
@@ -765,7 +1120,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -799,7 +1154,7 @@
                 "nette",
                 "validation"
             ],
-            "time": "2019-10-17T22:38:47+00:00"
+            "time": "2019-11-19T15:43:44+00:00"
         },
         {
             "name": "nette/http",
@@ -807,12 +1162,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "1df063526343299ea7fccdf90de6575db3559ff5"
+                "reference": "3240b4b999cfa6a4747de21452e3e9b42734bd6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/1df063526343299ea7fccdf90de6575db3559ff5",
-                "reference": "1df063526343299ea7fccdf90de6575db3559ff5",
+                "url": "https://api.github.com/repos/nette/http/zipball/3240b4b999cfa6a4747de21452e3e9b42734bd6d",
+                "reference": "3240b4b999cfa6a4747de21452e3e9b42734bd6d",
                 "shasum": ""
             },
             "require": {
@@ -871,7 +1226,7 @@
                 "session",
                 "url"
             ],
-            "time": "2019-10-31T15:07:40+00:00"
+            "time": "2019-11-19T15:29:06+00:00"
         },
         {
             "name": "nette/mail",
@@ -947,22 +1302,22 @@
         },
         {
             "name": "nette/neon",
-            "version": "dev-master",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/neon.git",
-                "reference": "1d785f60e72d5d825ace5b6b6cdca5d4bb46bcbf"
+                "reference": "cbff32059cbdd8720deccf9e9eace6ee516f02eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/neon/zipball/1d785f60e72d5d825ace5b6b6cdca5d4bb46bcbf",
-                "reference": "1d785f60e72d5d825ace5b6b6cdca5d4bb46bcbf",
+                "url": "https://api.github.com/repos/nette/neon/zipball/cbff32059cbdd8720deccf9e9eace6ee516f02eb",
+                "reference": "cbff32059cbdd8720deccf9e9eace6ee516f02eb",
                 "shasum": ""
             },
             "require": {
                 "ext-iconv": "*",
                 "ext-json": "*",
-                "php": ">=7.1"
+                "php": ">=7.0"
             },
             "require-dev": {
                 "nette/tester": "^2.0",
@@ -971,7 +1326,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -995,7 +1350,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+            "description": "? Nette NEON: encodes and decodes NEON file format.",
             "homepage": "http://ne-on.org",
             "keywords": [
                 "export",
@@ -1004,7 +1359,7 @@
                 "nette",
                 "yaml"
             ],
-            "time": "2019-11-13T20:21:57+00:00"
+            "time": "2019-02-05T21:30:40+00:00"
         },
         {
             "name": "nette/php-generator",
@@ -1012,12 +1367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "55a91aee11d37bf2e2f5923d278312b654407769"
+                "reference": "633c499f14e378df0dd00a645a32c2d287b71147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/55a91aee11d37bf2e2f5923d278312b654407769",
-                "reference": "55a91aee11d37bf2e2f5923d278312b654407769",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/633c499f14e378df0dd00a645a32c2d287b71147",
+                "reference": "633c499f14e378df0dd00a645a32c2d287b71147",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1386,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -1063,7 +1418,7 @@
                 "php",
                 "scaffolding"
             ],
-            "time": "2019-11-13T19:40:20+00:00"
+            "time": "2019-11-19T23:06:54+00:00"
         },
         {
             "name": "nette/robot-loader",
@@ -1071,12 +1426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/robot-loader.git",
-                "reference": "95c86871c262d8f22e57950b9cb75ab96d57072c"
+                "reference": "cc0c4b5e75e3369949a69663d3b8f7ca5326f314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/95c86871c262d8f22e57950b9cb75ab96d57072c",
-                "reference": "95c86871c262d8f22e57950b9cb75ab96d57072c",
+                "url": "https://api.github.com/repos/nette/robot-loader/zipball/cc0c4b5e75e3369949a69663d3b8f7ca5326f314",
+                "reference": "cc0c4b5e75e3369949a69663d3b8f7ca5326f314",
                 "shasum": ""
             },
             "require": {
@@ -1125,7 +1480,7 @@
                 "nette",
                 "trait"
             ],
-            "time": "2019-11-13T19:41:40+00:00"
+            "time": "2019-11-19T14:59:00+00:00"
         },
         {
             "name": "nette/routing",
@@ -1133,12 +1488,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/routing.git",
-                "reference": "f8f83a3c8ac29ee4b8dc4566a2d8dd8e6e69f1b3"
+                "reference": "fa0db7233f1a31e8345dc89b046095003ef04d20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/routing/zipball/f8f83a3c8ac29ee4b8dc4566a2d8dd8e6e69f1b3",
-                "reference": "f8f83a3c8ac29ee4b8dc4566a2d8dd8e6e69f1b3",
+                "url": "https://api.github.com/repos/nette/routing/zipball/fa0db7233f1a31e8345dc89b046095003ef04d20",
+                "reference": "fa0db7233f1a31e8345dc89b046095003ef04d20",
                 "shasum": ""
             },
             "require": {
@@ -1182,7 +1537,7 @@
             "keywords": [
                 "nette"
             ],
-            "time": "2019-11-13T19:42:06+00:00"
+            "time": "2019-11-19T14:58:09+00:00"
         },
         {
             "name": "nette/schema",
@@ -1190,12 +1545,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "7cb850c47ed882b8af9954ea0aa1d91dafd28905"
+                "reference": "459bac9464a21f2cb12b129556a772814a458a05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/7cb850c47ed882b8af9954ea0aa1d91dafd28905",
-                "reference": "7cb850c47ed882b8af9954ea0aa1d91dafd28905",
+                "url": "https://api.github.com/repos/nette/schema/zipball/459bac9464a21f2cb12b129556a772814a458a05",
+                "reference": "459bac9464a21f2cb12b129556a772814a458a05",
                 "shasum": ""
             },
             "require": {
@@ -1239,7 +1594,7 @@
                 "config",
                 "nette"
             ],
-            "time": "2019-11-13T20:01:23+00:00"
+            "time": "2019-11-19T14:55:54+00:00"
         },
         {
             "name": "nette/security",
@@ -1247,12 +1602,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/security.git",
-                "reference": "c25fc5b22564cd75843e448333e30a8ffb6bace5"
+                "reference": "fd6a384679f7eece37c8f47eeb89144c3d0c8630"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/security/zipball/c25fc5b22564cd75843e448333e30a8ffb6bace5",
-                "reference": "c25fc5b22564cd75843e448333e30a8ffb6bace5",
+                "url": "https://api.github.com/repos/nette/security/zipball/fd6a384679f7eece37c8f47eeb89144c3d0c8630",
+                "reference": "fd6a384679f7eece37c8f47eeb89144c3d0c8630",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1658,7 @@
                 "authorization",
                 "nette"
             ],
-            "time": "2019-11-01T13:22:53+00:00"
+            "time": "2019-11-19T14:54:46+00:00"
         },
         {
             "name": "nette/utils",
@@ -1311,12 +1666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "6296ca6e3c48926f827aca088ea28d36777904b0"
+                "reference": "e024393dadc0bfd16446c955ea793114f1d583a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/6296ca6e3c48926f827aca088ea28d36777904b0",
-                "reference": "6296ca6e3c48926f827aca088ea28d36777904b0",
+                "url": "https://api.github.com/repos/nette/utils/zipball/e024393dadc0bfd16446c955ea793114f1d583a0",
+                "reference": "e024393dadc0bfd16446c955ea793114f1d583a0",
                 "shasum": ""
             },
             "require": {
@@ -1380,7 +1735,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2019-11-13T22:46:09+00:00"
+            "time": "2019-11-19T21:13:08+00:00"
         },
         {
             "name": "tracy/tracy",
@@ -1388,12 +1743,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "5d6cb07b7a4db3d05d45a9c1ac3230ad904b56a2"
+                "reference": "73d2222eac05a0e54693bdb7a0fa252f81c1aa03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/5d6cb07b7a4db3d05d45a9c1ac3230ad904b56a2",
-                "reference": "5d6cb07b7a4db3d05d45a9c1ac3230ad904b56a2",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/73d2222eac05a0e54693bdb7a0fa252f81c1aa03",
+                "reference": "73d2222eac05a0e54693bdb7a0fa252f81c1aa03",
                 "shasum": ""
             },
             "require": {
@@ -1450,7 +1805,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2019-11-06T18:31:23+00:00"
+            "time": "2019-11-19T00:28:09+00:00"
         }
     ],
     "packages-dev": [
@@ -1460,12 +1815,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tester.git",
-                "reference": "55e4447c83396973fe5c89fafca37a21797848f6"
+                "reference": "c3bd1b2c1074dfb957288b716c06aa7b4b5295a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tester/zipball/55e4447c83396973fe5c89fafca37a21797848f6",
-                "reference": "55e4447c83396973fe5c89fafca37a21797848f6",
+                "url": "https://api.github.com/repos/nette/tester/zipball/c3bd1b2c1074dfb957288b716c06aa7b4b5295a8",
+                "reference": "c3bd1b2c1074dfb957288b716c06aa7b4b5295a8",
                 "shasum": ""
             },
             "require": {
@@ -1515,18 +1870,27 @@
                 "testing",
                 "unit"
             ],
-            "time": "2019-11-13T21:51:20+00:00"
+            "time": "2019-11-19T13:19:16+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dateti/dateti": 20
+        "dateti/core": 20,
+        "dateti/dateti": 20,
+        "dateti/holidays-cs": 20,
+        "dateti/holidays-easter-catholic": 20,
+        "dateti/holidays-easter-php": 20,
+        "dateti/localization-en": 20,
+        "dateti/localization-cs": 20,
+        "dateti/nette-extension": 20,
+        "dateti/country-czech-republic": 20,
+        "dateti/time": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">= 7.1"
+        "php": ">= 7.2"
     },
     "platform-dev": []
 }
